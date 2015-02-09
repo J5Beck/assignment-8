@@ -3,7 +3,7 @@ var counter = function() {
   var hour = date.getHours();
   var minutes = date.getMinutes();
   var seconds = date.getSeconds();
-  if(minutes.toString().length > 2) {
+  if(minutes.toString().length < 2) {
                   minutes = "0" + minutes;
 }
   if(seconds.toString().length < 2) {
@@ -13,11 +13,11 @@ var counter = function() {
   
   $("p").text(timeString).css({
             "text-align" : "center",
-             "font-size" : "90px",
+             "font-size" : "80px",
             "font-style" : "italic",
            "padding-top" : "150px",
                 "height" : "300px",
-                 "width" : "75%",
+                 "width" : "600px",
                  "color" : "white",
       "background-color" : "black"
   })
