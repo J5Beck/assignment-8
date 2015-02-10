@@ -26,7 +26,7 @@ var counter = function() {
   })
   var colorString = "#" + hour + minutes + seconds;
 
-  $("span").text(colorString).css({
+  $("h1").text(colorString).css({
                 "dislay" : "block",
             "text-align" : "center",
              "font-size" : "80px",
